@@ -1,96 +1,27 @@
-================================================================================
-              MFC ¶óÀÌºê·¯¸® : WGA2OutdoorsEditor ÇÁ·ÎÁ§Æ® °³¿ä
-================================================================================
+ì˜¥íŠ¸ë¦¬ ê¸°ë°˜ì˜ ì™¸ë¶€ ì§€í˜• ì—ë””í„°
 
-ÀÀ¿ë ÇÁ·Î±×·¥ ¸¶¹ý»ç¸¦ »ç¿ëÇÏ¿© WGA2OutdoorsEditor ÀÀ¿ë ÇÁ·Î±×·¥À» ¸¸µì´Ï´Ù. ÀÌ ÀÀ¿ë 
-ÇÁ·Î±×·¥¿¡¼­´Â ±âº»ÀûÀÎ MFC »ç¿ë ¹ä¹ý°ú ÀÀ¿ë ÇÁ·Î±×·¥ ÀÛ¼º ¹æ¹ýÀ» ¼³¸íÇÕ´Ï´Ù.
+1. ì‚¬ìš© ë°©ë²• :
+	1-1. ì¹´ë©”ë¼ ì´ë™ 
+-	w : ì•žìœ¼ë¡œ
+-	s : ë’¤ë¡œ
+-	a : ì¢Œë¡œ
+-	d : ìš°ë¡œ
+-	ì¹´ë©”ë¼ íšŒì „ : ë§ˆìš°ìŠ¤ ì˜¤ë¥¸ìª½ ë²„íŠ¼ í´ë¦­í•œ ìƒíƒœì—ì„œ ë“œëž˜ê·¸
 
-ÀÌ ÆÄÀÏ¿¡´Â WGA2OutdoorsEditor ÀÀ¿ë ÇÁ·Î±×·¥À» ±¸¼ºÇÏ´Â °¢ ÆÄÀÏ¿¡ ´ëÇÑ °³¿ä°¡ Æ÷ÇÔµÇ¾î
-ÀÖ½À´Ï´Ù.
+2. ì§€í˜• ìƒì„±
+	2-1. ì§€í˜• ìƒì„±
+2-1-1. ì§€í˜• ìƒì„± ëŒ€í™” ìƒìž ì¶œë ¥
+- ìƒë‹¨ ë©”ë‰´ë°”ì˜ ê¸°ë³¸ ì§€í˜• ìƒì„± ì•„ì´ì½˜ì„ í´ë¦­í•˜ë©´ ì§€í˜• ìƒì„± ëŒ€í™” ìƒìžê°€ ì¶œë ¥ëœë‹¤.
 
-WGA2OutdoorsEditor.vcproj
-    ÀÀ¿ë ÇÁ·Î±×·¥ ¸¶¹ý»ç¸¦ »ç¿ëÇÏ¿© »ý¼ºµÈ VC++ ÇÁ·ÎÁ§Æ®ÀÇ ÁÖ ÇÁ·ÎÁ§Æ® ÆÄÀÏÀÔ´Ï´Ù.
-    ÀÌ ÆÄÀÏ¿¡´Â ÆÄÀÏÀ» »ý¼ºÇÑ Visual C++ ¹öÀü Á¤º¸ ¹× ÀÀ¿ë ÇÁ·Î±×·¥ ¸¶¹ý»ç¿¡¼­ ¼±ÅÃÇÑ ÇÃ·§Æû,
-    ±¸¼º, ÇÁ·ÎÁ§Æ® ±â´É µîÀÇ Á¤º¸°¡ Æ÷ÇÔµË´Ï´Ù.
+2-1-2. í‰ì§€ ë˜ëŠ” Heightmap(ë¹„íŠ¸ë§µíŒŒì¼) ìœ¼ë¡œ ì§€í˜• ìƒì„±
+-	ê³ ë„ ë°ì´í„° íƒ€ìž…ì—ì„œ í‰ì§€ë¥¼ ì„ íƒí•˜ê±°ë‚˜ Heightmap Fileì„ ì„ íƒí•œë‹¤
+-	Heightmap Fileì„ ì„ íƒí•˜ê³  open ë²„íŠ¼ì„ í´ë¦­í•˜ë©´ Heightmapìœ¼ë¡œ ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” bitmap íŒŒì¼ì´ ë³´ì´ê³  ê·¸ì¤‘ì— í•˜ë‚˜ë¥¼ ì„ íƒí•œë‹¤.
 
-WGA2OutdoorsEditor.h
-    ÀÀ¿ë ÇÁ·Î±×·¥ÀÇ ÁÖ Çì´õ ÆÄÀÏÀÔ´Ï´Ù. ÀÌ ÆÄÀÏ¿¡´Â ´Ù¸¥ ÇÁ·ÎÁ§Æ®¿¡ °ü·ÃµÈ Resource.h¿Í °°Àº
-    Æ¯Á¤ Çì´õ°¡ Æ÷ÇÔµÇ¸ç CWGA2OutdoorsEditorApp ÀÀ¿ë ÇÁ·Î±×·¥ Å¬·¡½º°¡ ¼±¾ðµË´Ï´Ù.
+3. ì§€í˜• íŽ¸ì§‘
+	3-1. ì§€í˜• ìˆ˜ì •
+	3-2. ì§€í˜• ì§€ë¬¼ ì„¤ì¹˜
+-	ì§€í˜•ì§€ë¬¼ì˜ ì„¤ì¹˜ëŠ” import ë²„íŠ¼ì„ í´ë¦­í•˜ë©´ ase íŒŒì¼ ì„ íƒ ì°½ì´ ë‚˜ì˜¨ë‹¤.
+-	íŒŒì¼ì„ ì„ íƒí•˜ê³  ì§€í˜•ì— í´ë¦­í•œë‹¤.
+ 
 
-WGA2OutdoorsEditor.cpp
-    CWGA2OutdoorsEditorApp ÀÀ¿ë ÇÁ·Î±×·¥ Å¬·¡½º¸¦ Æ÷ÇÔÇÏ´Â ÁÖ ÀÀ¿ë ÇÁ·Î±×·¥ÀÇ ¼Ò½º ÆÄÀÏÀÔ´Ï´Ù.
 
-WGA2OutdoorsEditor.rc
-    ÇÁ·Î±×·¥¿¡¼­ »ç¿ëÇÏ´Â ¸ðµç Microsoft Windows ¸®¼Ò½º°¡ ³ª¿­µÈ ÆÄÀÏÀÔ´Ï´Ù.
-    ÀÌ ÆÄÀÏ¿¡´Â RES ÇÏÀ§ µð·ºÅÍ¸®¿¡ ÀúÀåµÈ ¾ÆÀÌÄÜ, ºñÆ®¸Ê ¹× Ä¿¼­°¡ Æ÷ÇÔµÇ¸ç
-    Microsoft Visual C++¿¡¼­ Á÷Á¢ ÀÌ ÆÄÀÏÀ» ÆíÁýÇÒ ¼öµµ ÀÖ½À´Ï´Ù. »ç¿ëÀÚÀÇ ÇÁ·ÎÁ§Æ®
-    ¸®¼Ò½º´Â 1042¿¡ µé¾î ÀÖ½À´Ï´Ù.
-
-res\WGA2OutdoorsEditor.ico
-    ÀÀ¿ë ÇÁ·Î±×·¥ÀÇ ¾ÆÀÌÄÜÀ¸·Î »ç¿ëµÇ´Â ¾ÆÀÌÄÜ ÆÄÀÏÀÔ´Ï´Ù.
-    ÀÌ ¾ÆÀÌÄÜÀº ÁÖ ¸®¼Ò½º ÆÄÀÏÀÎ WGA2OutdoorsEditor.rc¿¡ Æ÷ÇÔµË´Ï´Ù.
-
-res\WGA2OutdoorsEditor.rc2
-    Microsoft Visual C++¿¡¼­ ÆíÁýÇÒ ¼ö ¾ø´Â ¸®¼Ò½º°¡ Æ÷ÇÔµÈ ÆÄÀÏÀÔ´Ï´Ù.
-    ¸®¼Ò½º ÆíÁý±â¿¡¼­ ÆíÁýÇÒ ¼ö ¾ø´Â ¸ðµç ¸®¼Ò½º´Â ÀÌ ÆÄÀÏ¿¡ Æ÷ÇÔµÇ¾î ÀÖ½À´Ï´Ù.
-/////////////////////////////////////////////////////////////////////////////
-
-ÁÖ ÇÁ·¹ÀÓ Ã¢¿¡ ÇØ´çµÇ´Â ³»¿ëÀÔ´Ï´Ù.
-    ÇÁ·ÎÁ§Æ®¿¡ Ç¥ÁØ MFC ÀÎÅÍÆäÀÌ½º°¡ Æ÷ÇÔµË´Ï´Ù.
-MainFrm.h, MainFrm.cpp
-    CMainFrame ÇÁ·¹ÀÓ Å¬·¡½º¸¦ Æ÷ÇÔÇÏ´Â ÆÄÀÏÀÔ´Ï´Ù.
-    ÇÁ·¹ÀÓ Å¬·¡½º´Â CFrameWnd¿¡¼­ ÆÄ»ýµÇ¸ç ¸ðµç SDI ÇÁ·¹ÀÓ ±â´ÉÀ» Á¦¾îÇÕ´Ï´Ù.
-res\Toolbar.bmp
-    µµ±¸ ¸ðÀ½¿¡ ¹ÙµÏÆÇ½Ä ÀÌ¹ÌÁö¸¦ ¸¸µé ¶§ »ç¿ëµÇ´Â ºñÆ®¸Ê ÆÄÀÏÀÔ´Ï´Ù.
-    ÃÊ±â µµ±¸ ¸ðÀ½ ¹× »óÅÂ Ç¥½ÃÁÙÀº CMainFrame Å¬·¡½º¿¡ ±¸¼ºµË´Ï´Ù.
-    ¸®¼Ò½º ÆíÁý±â¸¦ »ç¿ëÇÏ¿© µµ±¸ ¸ðÀ½ ºñÆ®¸ÊÀ» ÆíÁýÇÏ°í WGA2OutdoorsEditor.rcÀÇ
-    IDR_MAINFRAME TOOLBAR ¹è¿­À» ¾÷µ¥ÀÌÆ®ÇÏ¿© µµ±¸ ¸ðÀ½ ´ÜÃß¿¡ Ãß°¡ÇÕ´Ï´Ù.
-/////////////////////////////////////////////////////////////////////////////
-
-ÀÀ¿ë ÇÁ·Î±×·¥ ¸¶¹ý»ç¿¡¼­ ´ÜÀÏ ¹®¼­ Á¾·ù ¹× ´ÜÀÏ ºä¸¦ ¸¸µì´Ï´Ù.
-
-WGA2OutdoorsEditorDoc.h, WGA2OutdoorsEditorDoc.cpp - ¹®¼­
-    CWGA2OutdoorsEditorDoc Å¬·¡½º¸¦ Æ÷ÇÔÇÏ´Â ÆÄÀÏÀÔ´Ï´Ù. ÀÌ ÆÄÀÏÀ» ÆíÁýÇÏ¿©
-    Æ¯Á¤ ¹®¼­ µ¥ÀÌÅÍ¸¦ Ãß°¡ÇÏ°í ÆÄÀÏÀ» ÀúÀå ¹× ·ÎµåÇÕ´Ï´Ù
-    (CWGA2OutdoorsEditorDoc::Serialize »ç¿ë).
-WGA2OutdoorsEditorView.h, WGA2OutdoorsEditorView.cpp - ¹®¼­ ºä
-    CWGA2OutdoorsEditorView Å¬·¡½º¸¦ Æ÷ÇÔÇÏ´Â ÆÄÀÏÀÔ´Ï´Ù.
-    CWGA2OutdoorsEditorView °³Ã¼¸¦ »ç¿ëÇÏ¿© CWGA2OutdoorsEditorDoc °³Ã¼¸¦ º¼ ¼ö ÀÖ½À´Ï´Ù.
-/////////////////////////////////////////////////////////////////////////////
-
-±âÅ¸ ±â´É
-
-ActiveX ÄÁÆ®·Ñ
-    ÀÀ¿ë ÇÁ·Î±×·¥¿¡¼­ ActiveX ÄÁÆ®·ÑÀ» »ç¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.
-
-ÀÎ¼â ¹× ÀÎ¼â ¹Ì¸®º¸±â Áö¿ø
-    ÀÀ¿ë ÇÁ·Î±×·¥ ¸¶¹ý»ç¿¡¼­ MFC ¶óÀÌºê·¯¸®ÀÇ CView Å¬·¡½º¿¡ ÀÖ´Â ¸â¹ö ÇÔ¼ö¸¦ È£ÃâÇÏ¿©
-    ÀÎ¼â, ÀÎ¼â ¼³Á¤, ÀÎ¼â ¹Ì¸®º¸±â ¸í·ÉÀ» Ã³¸®ÇÒ ¼ö ÀÖ´Â ÄÚµå¸¦ »ý¼ºÇÕ´Ï´Ù.
-/////////////////////////////////////////////////////////////////////////////
-
-±âÅ¸ Ç¥ÁØ ÆÄÀÏ
-
-StdAfx.h, StdAfx.cpp
-    ¹Ì¸® ÄÄÆÄÀÏµÈ Çì´õ ÆÄÀÏ(PCH) WGA2OutdoorsEditor.pch ¹× ¹Ì¸® ÄÄÆÄÀÏµÈ
-    Çü½Ä ÆÄÀÏ StdAfx.obj¸¦ ºôµåÇÒ ¶§ »ç¿ëµÇ´Â ÆÄÀÏÀÔ´Ï´Ù.
-
-Resource.h
-    »õ·Î¿î ¸®¼Ò½º ID¸¦ Á¤ÀÇÇÏ´Â Ç¥ÁØ Çì´õ ÆÄÀÏÀÔ´Ï´Ù.
-    Microsoft Visual C++¿¡¼­ ÀÌ ÆÄÀÏÀ» ÀÐ°í ¾÷µ¥ÀÌÆ®ÇÕ´Ï´Ù.
-
-/////////////////////////////////////////////////////////////////////////////
-
-±âÅ¸ Á¤º¸
-
-ÀÀ¿ë ÇÁ·Î±×·¥ ¸¶¹ý»ç¿¡¼­´Â "TODO:"¸¦ »ç¿ëÇÏ¿© Ãß°¡ÇÏ°Å³ª »ç¿ëÀÚ ÁöÁ¤ÇØ¾ß ÇÏ´Â
-¼Ò½º ÄÚµå¸¦ ³ªÅ¸³À´Ï´Ù.
-
-ÀÀ¿ë ÇÁ·Î±×·¥¿¡¼­ °øÀ¯ DLL¿¡ MFC¸¦ »ç¿ëÇÏ°í ÀÀ¿ë ÇÁ·Î±×·¥ÀÇ ¾ð¾î°¡ ¿î¿µ Ã¼Á¦ÀÇ
-¾ð¾î¿Í ´Ù¸¥ °æ¿ì Microsoft Visual C++ CD-ROMÀÇ Win\System µð·ºÅÍ¸®¿¡ ÀÖ´Â 
-ÇØ´ç Áö¿ªÀÇ ¸®¼Ò½ºÀÎ MFC70XXX.DLLÀ» ÄÄÇ»ÅÍÀÇ system ¶Ç´Â system32 µð·ºÅÍ¸®¿¡ 
-º¹»çÇÑ ´ÙÀ½ MFCLOC.DLL·Î ÀÌ¸§À» ¹Ù²Ù¾î¾ß ÇÕ´Ï´Ù. "XXX"´Â ÇØ´ç ¾ð¾î¸¦ ³ªÅ¸³»´Â
-¾à¾îÀÔ´Ï´Ù. ¿¹¸¦ µé¾î MFC70DEU.DLL¿¡´Â µ¶ÀÏ¾î·Î º¯È¯µÈ ¸®¼Ò½º°¡ Æ÷ÇÔµË´Ï´Ù.
-ÀÌ·± ÀÛ¾÷À» ÇÏÁö ¾ÊÀ¸¸é ÀÀ¿ë ÇÁ·Î±×·¥ÀÇ ÀÏºÎ UI ¿ä¼Ò°¡ ¿î¿µ Ã¼Á¦ÀÇ ¾ð¾î·Î
-³²¾Æ ÀÖ°Ô µË´Ï´Ù.
-
-/////////////////////////////////////////////////////////////////////////////
