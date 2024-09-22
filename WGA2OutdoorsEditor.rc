@@ -1,0 +1,664 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\WGA2OutdoorsEditor.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#include ""afxprint.rc""       // 인쇄 미리 보기 리소스\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WGA2OutdoorsEditor.ico"
+IDR_WGA2OutdoorsEdiTYPE ICON    DISCARDABLE     "res\\WGA2OutdoorsEditorDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP1             BITMAP  MOVEABLE PURE   "res\\bitmap1.bmp"
+IDB_BITMAP2             BITMAP  MOVEABLE PURE   "res\\bitmap2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_CREATE_TERRAIN
+    BUTTON      ID_POINT
+    BUTTON      ID_WIREFRAME
+    BUTTON      ID_SOLID
+    SEPARATOR
+    BUTTON      ID_OCTREE_BBOX
+    BUTTON      ID_TERRAIN_BBOX
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "새로 만들기\tCtrl+N(&N)",     ID_FILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "끝내기(&X)",                  ID_APP_EXIT
+    END
+    POPUP "지형(&T)"
+    BEGIN
+        MENUITEM "생성...",                     ID_CREATE_TERRAIN
+        MENUITEM SEPARATOR
+        MENUITEM "Import Terrain Object Library...", 
+                                                ID_IMPORT_TERRAIN_OBJECT
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "실행 취소\tCtrl+Z(&U)",       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기\tCtrl+X(&T)",        ID_EDIT_CUT
+        MENUITEM "복사\tCtrl+C(&C)",            ID_EDIT_COPY
+        MENUITEM "붙여넣기\tCtrl+V(&P)",        ID_EDIT_PASTE
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "Point",                       ID_POINT, CHECKED
+        MENUITEM "Wireframe",                   139, CHECKED
+        MENUITEM "Solid",                       ID_SOLID, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Octree 경계상자",             32784, CHECKED, INACTIVE
+        MENUITEM "Terrain 경계상자",            32786, CHECKED, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "도구 모음(&T)",               ID_VIEW_TOOLBAR
+        MENUITEM "상태 표시줄(&S)",             ID_VIEW_STATUS_BAR
+    END
+    POPUP "창(&W)"
+    BEGIN
+        MENUITEM "Main Editor",                 ID_WINDOW_MAIN_EDITOR
+        , CHECKED
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "WGA2OutdoorsEditor 정보(&A)...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "W",            ID_WIREFRAME,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WGA2OutdoorsEditor 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "WGA2OutdoorsEditor 버전 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (c) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_CREATE_TERRAIN DIALOGEX 0, 0, 205, 282
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Terrain"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CELL_SPACE,71,50,50,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "평지",IDC_RADIO_FLAT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,29,87,33,12
+    CONTROL         "Height map file",IDC_RADIO_HEIGHTMAP,"Button",
+                    BS_AUTORADIOBUTTON,29,103,62,12
+    CONTROL         "Random",IDC_RADIO_RANDOM,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE,29,113,46,12
+    PUSHBUTTON      "Open",IDC_BTN_HEIGHTOPEN,106,102,61,15,WS_DISABLED
+    DEFPUSHBUTTON   "확인",IDOK,41,261,50,14
+    PUSHBUTTON      "취소",IDCANCEL,114,261,50,14
+    LTEXT           "Terrain Size :",IDC_STATIC,25,16,44,9
+    GROUPBOX        "Scale",IDC_STATIC,16,3,173,66
+    GROUPBOX        "고도 데이타 타입",IDC_STATIC,16,75,173,53
+    LTEXT           "Patch 수 :",IDC_STATIC,25,34,44,9
+    LTEXT           "Cell Space :",IDC_STATIC,24,52,41,11
+    COMBOBOX        IDC_COMBO_TERRAIN_SIZE,71,15,54,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "( Cell의 갯수 )",IDC_STATIC,130,17,49,10
+    GROUPBOX        "생성할 지형 정보",IDC_STATIC,15,132,174,94
+    COMBOBOX        IDC_COMBO_NUM_PATCH,71,32,54,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "기본 텍스쳐",IDC_STATIC,16,230,173,25
+    PUSHBUTTON      "...",IDC_BTN_OPEN_TEXTURE,167,240,18,10
+    LTEXT           "Static",IDC_MAP_INFO,88,146,81,8
+    EDITTEXT        IDC_EDIT_TEX_FILENAME,21,241,142,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Terrain Real Size :",IDC_STATIC,26,146,62,8
+    GROUPBOX        "Height map 정보",IDC_STATIC,22,173,159,45
+    LTEXT           "Map size :",IDC_STATIC,29,186,35,8
+    LTEXT           "Map File :",IDC_STATIC,29,202,32,8
+    LTEXT           "Static",IDC_HEIGHTMAP_SIZE,65,187,104,8
+    EDITTEXT        IDC_HEIGHTMAP_FILE,62,202,115,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Cells Per Patch :",IDC_STATIC,26,160,54,8
+    LTEXT           "Static",IDC_NUM_CELLS_PER_PATCH,84,160,48,8
+END
+
+IDD_DLGBAR_TABMENU DIALOGEX 0, 0, 231, 295
+STYLE DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_DLG_TAB,"SysTabControl32",TCS_HOTTRACK | 
+                    TCS_MULTILINE,7,7,99,14
+END
+
+IDD_DLG_TERRAIN_EDITOR DIALOGEX 0, 0, 175, 298
+STYLE DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "지형수정",IDC_TERRAIN_MODIFICATION,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,7,6,66,17
+    CONTROL         "텍스쳐",IDC_TERRAIN_TEXTURE,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | NOT WS_VISIBLE | WS_TABSTOP,7,31,67,17
+    CONTROL         "지형지물",IDC_TERRAIN_OBJECT,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,81,6,66,17
+END
+
+IDD_DLG_OBJECT_EDITOR DIALOGEX 0, 0, 186, 90
+STYLE DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Working...",IDC_STATIC,71,34,64,11
+END
+
+IDD_DLG_TERRAIN_MODIFY DIALOG DISCARDABLE  0, 0, 165, 298
+STYLE DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    COMBOBOX        IDC_COMBO1,73,19,76,57,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_SLIDER_CIRCLE_RADIUS,"msctls_trackbar32",TBS_TOP | 
+                    TBS_NOTICKS | WS_BORDER | WS_TABSTOP,16,52,132,17
+    EDITTEXT        IDC_EDIT_CIRCLE_RADIUS,118,37,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER_HEIGHT,"msctls_trackbar32",TBS_TOP | 
+                    TBS_NOTICKS | WS_BORDER | WS_TABSTOP,15,93,133,17
+    CONTROL         "연속적인 업데이트",IDC_CHECK_SERIAL_UPDATE,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,18,119,114,8
+    CONTROL         "평면",IDC_RADIO_SYNC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,23,174,88,13
+    CONTROL         "부드러운 곡선",IDC_RADIO_SINE,"Button",
+                    BS_AUTORADIOBUTTON,23,187,63,13
+    EDITTEXT        IDC_EDIT4,29,201,34,12,ES_AUTOHSCROLL
+    GROUPBOX        "Modify Item",IDC_STATIC_GRB1,7,7,151,219
+    LTEXT           "Update Type :",IDC_STATIC_TEXT1,15,21,51,8,NOT WS_GROUP
+    LTEXT           "편집 영역 ( 1 ~ 10 )",IDC_STATIC_TEXT2,15,40,76,8,NOT 
+                    WS_GROUP
+    LTEXT           "높이 ( 1 ~ 10 )",IDC_STATIC_TEXT3,15,81,50,9,NOT 
+                    WS_GROUP
+    LTEXT           "( 2.0 까지 )",IDC_STATIC_TEXT6,68,203,39,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_HEIGHT,117,77,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,22,141,41,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY,61,141,13,12
+    GROUPBOX        "Update Speed",IDC_STATIC,16,129,133,30
+    LTEXT           "( 최대 50까지 )",IDC_STATIC,82,143,52,8
+    GROUPBOX        "Update Type",IDC_STATIC,16,163,133,56
+END
+
+IDD_DLG_TERRAIN_TEXTURE DIALOGEX 0, 0, 186, 307
+STYLE DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Texture",IDC_STATIC,7,7,151,205
+    LISTBOX         IDC_LIST1,21,92,122,97,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_SLIDER_CIRCLE_RADIUS,"msctls_trackbar32",TBS_TOP | 
+                    TBS_NOTICKS | WS_BORDER | WS_TABSTOP,18,36,132,17
+    EDITTEXT        IDC_EDIT_CIRCLE_RADIUS,120,22,30,12,ES_AUTOHSCROLL
+    LTEXT           "편집 영역 ( 1 ~ 10 )",IDC_STATIC_TEXT2,17,24,76,8,NOT 
+                    WS_GROUP
+END
+
+IDD_DLGBAR_OBSERVER DIALOGEX 0, 0, 387, 89
+STYLE DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,143,0,244,89,ES_MULTILINE | ES_AUTOHSCROLL
+    LTEXT           "( F/s )",IDC_STATIC,63,19,20,8
+    GROUPBOX        "Render Info",IDC_STATIC,6,2,86,82
+    RTEXT           "0",IDC_FPS,20,19,37,8
+    GROUPBOX        "FPS",IDC_STATIC,10,10,77,23
+    LTEXT           "Terrain :",IDC_STATIC,15,45,28,8
+    LTEXT           "0",IDC_NUM_TERRAIN_FACE,48,45,24,8
+    LTEXT           "Obstacles :",IDC_STATIC,15,56,36,7
+    GROUPBOX        "Face",IDC_STATIC,10,35,77,45
+    LTEXT           "0",IDC_NUM_TOBSTACLES_FACE,56,56,26,8
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 227, 58
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,31,20,164,
+                    11
+END
+
+IDD_DLG_TERRAIN_OBJECT DIALOGEX 0, 0, 170, 307
+STYLE DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Object",IDC_STATIC,7,7,151,177
+    CONTROL         "",IDC_TERRAIN_OBJECT_LIB,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,23,34,118,75
+    GROUPBOX        "Terrain Object Library",IDC_STATIC,16,21,133,154
+    CTEXT           "Terrain Object",IDC_SELECT_OBJECT,23,131,118,13,
+                    WS_BORDER
+    CONTROL         "추가",IDC_ADD_OBJECT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP,23,147,32,15
+    CONTROL         "삭제",IDC_DELETE_OBJECT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,65,147,32,15
+    PUSHBUTTON      "Import...",IDC_IMPORT_TERRAIN_OBJ,24,112,39,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>\0"
+            VALUE "FileDescription", "TODO: <파일 설명>\0"
+            VALUE "FileVersion", "1.0.0.1\0"
+            VALUE "InternalName", "WGA2OutdoorsEditor.exe\0"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved.\0"
+            VALUE "OriginalFilename", "WGA2OutdoorsEditor.exe\0"
+            VALUE "ProductName", "TODO: <제품 이름>\0"
+            VALUE "ProductVersion", "1.0.0.1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "변환", 0x412, 949
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CREATE_TERRAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 275
+    END
+
+    IDD_DLGBAR_TABMENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_DLG_TERRAIN_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 290
+    END
+
+    IDD_DLG_OBJECT_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DLG_TERRAIN_MODIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_DLG_TERRAIN_TEXTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 300
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_DLG_TERRAIN_OBJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 300
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST MOVEABLE PURE "res\\WGA2OutdoorsEditor.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLG_TERRAIN_MODIFY DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 3, 0
+0x7075, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6f64, 0x6e77, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0x6c66, 0x7461, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "WGA2OutdoorsEditor\n\nWGA2OutdoorsEdi\n\n\nWGA2OutdoorsEditor.Document\nWGA2OutdoorsEditor.Document"
+    ID_CREATE_TERRAIN       "기본 지형을 생성합니다."
+    ID_POINT                "point rendering"
+    ID_WIREFRAME            "wireframe rendering"
+    ID_SOLID                "solid rendering"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "WGA2OutdoorsEditor"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "새 문서를 만듭니다.\n새로 만들기"
+    ID_FILE_OPEN            "기존 문서를 엽니다.\n열기"
+    ID_FILE_CLOSE           "액티브 문서를 닫습니다.\n닫기"
+    ID_FILE_SAVE            "액티브 문서를 저장합니다.\n저장"
+    ID_FILE_SAVE_AS         "액티브 문서를 새 이름으로 저장합니다.\n다른 이름으로 저장"
+    ID_FILE_PAGE_SETUP      "인쇄 옵션을 변경합니다.\n페이지 설정"
+    ID_FILE_PRINT_SETUP     "프린터 및 인쇄 옵션을 변경합니다.\n인쇄 설정"
+    ID_FILE_PRINT           "액티브 문서를 인쇄합니다.\n인쇄"
+    ID_FILE_PRINT_PREVIEW   "전체 페이지를 표시합니다.\n인쇄 미리 보기"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보, 버전 번호, 저작권을 표시합니다.\n정보"
+    ID_APP_EXIT             "문서를 저장할지를 묻고 응용 프로그램을 끝냅니다.\n끝내기"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE2       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE3       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE4       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE5       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE6       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE7       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE8       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE9       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE10      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE11      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE12      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE13      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE14      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE15      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE16      "현재 문서를 엽니다."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다.\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다.\n이전 창"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "활성 창을 여러 개의 창으로 분할합니다.\n분할"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택 영역을 지웁니다.\n지우기"
+    ID_EDIT_CLEAR_ALL       "모든 것을 지웁니다.\n모두 지우기"
+    ID_EDIT_COPY            "선택 영역을 복사하여 클립보드에 넣습니다.\n복사"
+    ID_EDIT_CUT             "선택 영역을 잘라내어 클립보드에 넣습니다.\n잘라내기"
+    ID_EDIT_FIND            "지정한 텍스트를 찾습니다.\n찾기"
+    ID_EDIT_PASTE           "클립보드 내용을 삽입합니다.\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막 작업을 반복합니다.\n반복"
+    ID_EDIT_REPLACE         "특정 텍스트를 다른 텍스트로 바꿉니다.\n바꾸기"
+    ID_EDIT_SELECT_ALL      "전체 문서를 선택합니다.\n모두 선택"
+    ID_EDIT_UNDO            "마지막 작업 실행을 취소합니다.\n실행 취소"
+    ID_EDIT_REDO            "이전에 실행 취소된 작업을 다시 실행합니다.\n다시 실행"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "도구 모음을 표시하거나 숨깁니다.\n도구 모음 설정/해제"
+    ID_VIEW_STATUS_BAR      "상태 표시줄을 표시하거나 숨깁니다.\n상태 표시줄 설정/해제"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창 크기를 변경합니다."
+    AFX_IDS_SCMOVE          "창 위치를 변경합니다."
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 축소합니다."
+    AFX_IDS_SCMAXIMIZE      "창을 전체 화면 크기로 확대합니다."
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다."
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다."
+    AFX_IDS_SCCLOSE         "문서를 저장할 것인지 확인하고 활성 창을 닫습니다."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 보통 크기로 복원합니다."
+    AFX_IDS_SCTASKLIST      "작업 목록 활성화"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "인쇄 미리 보기 모드를 닫습니다.\n미리 보기 취소"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OCTREE_BBOX          "옥트리 경계 상자를 보여줍니다."
+    ID_TERRAIN_BBOX         "지형 경계상자를 보여줍니다."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\WGA2OutdoorsEditor.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#include "afxprint.rc"       // 인쇄 미리 보기 리소스
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

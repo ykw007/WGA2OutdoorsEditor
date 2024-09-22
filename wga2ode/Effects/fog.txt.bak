@@ -1,0 +1,30 @@
+technique Fog
+{
+	pass P0
+	{
+	//
+	// Set misc render states.
+	
+	pixelshader = null;
+	vertexshader = null;
+	fvf = XYZ | Normal;
+	Lighting = true;
+	NormalizeNormals = true;
+	SpecularEnable = false;
+	
+	//
+	// Fog states
+	FogVertexMode = LINEAR; // Linear fog function.
+	//FogVertexMode = EXP2;
+	//FogTableMode = LINEAR;
+	FogDensity = 0.33f;
+	FogStart = 0.5f; // Fog starts 50 units
+	
+	// away from viewpoint.
+	FogEnd = 0.8f; // Fog ends 300 units
+	
+	// away from viewpoint.
+	FogColor = 0x00FFFFFF;// Gray colored fog.
+	FogEnable = true; // Enable vertex fog.
+	}
+}
