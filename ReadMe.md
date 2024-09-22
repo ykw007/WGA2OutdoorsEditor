@@ -13,3 +13,5 @@ dll에 주요 엔진 기능을 구현하고 에디터에서 dll을 import하여 
 ![wga2OutdoorEditor02](https://github.com/user-attachments/assets/9cd27f42-bc44-476b-995e-d22f26fb2f47)
 
 3. 지형 지물 설치
+
+![wga2OutdoorEditor03](https://github.com/user-attachments/assets/68938148-5a1c-4011-bed7-1534ac777571)
