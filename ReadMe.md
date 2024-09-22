@@ -24,4 +24,5 @@ dll에 주요 엔진 기능을 구현하고 에디터에서 dll을 import하여 
 -지형지물의 설치는 import 버튼을 클릭하면 ase 파일 선택 창이 나온다.
 -파일을 선택하고 지형에 클릭한다.
  
-![wga2OutdoorEditor](https://github.com/user-attachments/assets/bc6f9769-3341-4938-bc8b-06a101f41292)
+
+![wga2OutdoorEditor01](https://github.com/user-attachments/assets/d92c24cd-fa66-486c-8462-84d32aded23a)
